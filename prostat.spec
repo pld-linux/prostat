@@ -8,6 +8,7 @@ Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://www.serveurs-nationaux.jussieu.fr/cache/prostat/%{name}_%{_ver}.tar.gz
+# Source0-md5:	757b39c69e0dc66a169c23dcc25db560
 URL:		http://cache.cnrs.fr/prostat/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Prereq:		/sbin/ldconfig
