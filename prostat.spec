@@ -24,7 +24,7 @@ Prostat jest narzêdziem do statystyk squida.
 %setup -q -n prostat_%{version}
 
 %build
-%{__make} CFLAGS="%{rpmcflags}" LIBS="-lm -lgd -lpng -lttf -ljpeg"
+%{__make} CC="%{__cc}" CFLAGS="%{rpmcflags}" LIBS="-lm -lgd -lpng -lttf -ljpeg"
 
 %install
 rm -rf $RPM_BUILD_ROOT
