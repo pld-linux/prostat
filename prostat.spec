@@ -3,20 +3,23 @@ Summary(pl):	Narzêdzie do statystyki squida
 Name:		prostat
 Version:	1.3
 Release:	5
+License:	GPL
 Group:		Applications
 Group(de):	Applikationen
 Group(pl):	Aplikacje
-License:	GPL
-URL:		http://cache.cnrs.fr/prostat/
-Source0:	%{name}_%{version}.tar.gz
+Source0:	http://www.serveurs-nationaux.jussieu.fr/cache/prostat/%{name}_%{version}.tar.gz
 Patch0:		%{name}-%{version}-megaloman.patch
 Patch1:		%{name}-%{version}-confix.patch
 Patch2:		%{name}-%{version}-png.patch
+URL:		http://cache.cnrs.fr/prostat/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Prereq:		/sbin/ldconfig
 
 %description
 Prostat is a squid statistic tool.
+
+%description -l pl
+Prostat jest narzêdziem do statystyk squida.
 
 %prep
 %setup -q -n prostat_%{version}
