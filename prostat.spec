@@ -21,7 +21,7 @@ Prostat is a squid statistic tool.
 Prostat jest narzêdziem do statystyk squida.
 
 %prep
-%setup -q -n prostat_%{_ver}
+%setup -q -n prostat_%{version}
 
 %build
 %{__make} CFLAGS="%{rpmcflags}" LIBS="-lm -lgd -lpng -lttf -ljpeg"
