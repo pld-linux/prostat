@@ -7,8 +7,6 @@ Version:	1.32
 Release:	1
 License:	GPL
 Group:		Applications
-Group(de):	Applikationen
-Group(pl):	Aplikacje
 Source0:	http://www.serveurs-nationaux.jussieu.fr/cache/prostat/%{name}_%{_ver}.tar.gz
 URL:		http://cache.cnrs.fr/prostat/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
