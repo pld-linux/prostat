@@ -10,9 +10,6 @@ Group:		Applications
 Group(de):	Applikationen
 Group(pl):	Aplikacje
 Source0:	http://www.serveurs-nationaux.jussieu.fr/cache/prostat/%{name}_%{_ver}.tar.gz
-Patch0:		%{name}-%{version}-megaloman.patch
-Patch1:		%{name}-%{version}-confix.patch
-Patch2:		%{name}-%{version}-png.patch
 URL:		http://cache.cnrs.fr/prostat/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Prereq:		/sbin/ldconfig
@@ -25,9 +22,6 @@ Prostat jest narzêdziem do statystyk squida.
 
 %prep
 %setup -q -n prostat_%{_ver}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
 
 %build
 %{__make} CFLAGS="%{rpmcflags}" LIBS="-lm -lgd -lpng -lttf -ljpeg"
