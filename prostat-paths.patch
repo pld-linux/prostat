@@ -1,0 +1,34 @@
+--- prostat_1.32/analhead.h.orig	Tue Oct 26 10:55:26 1999
++++ prostat_1.32/analhead.h	Thu Aug  7 16:20:08 2003
+@@ -92,19 +92,19 @@
+ /*** ALL the options from here on can be overridden on the command line,
+      or in the configuration file (except CONFIGFILE!) ***/ 
+ 
+-#define LOGFILE "/spare1/logs/access.log.0"
++#define LOGFILE "/var/log/squid/access.log.0"
+ /* The name of the default logfile; use "stdin" for stdin */
+ /* Overridden by argument without + or -, or by just '-' for stdin. */
+ 
+ #define OUTDIR "stdout"
+ /* the default directory for output. Use "stdout" for stdout. */
+ 
+-#define DOMAINSFILE "/usr/local/etc/domains.tab"
++#define DOMAINSFILE "/usr/share/prostat/domains.tab"
+ /* the name of the file where the domain definitions live; see README.html
+    for the format of this file */
+ /* Overridden by -f */
+ 
+-#define TYPESFILE "/usr/local/etc/mime.types"
++#define TYPESFILE "/etc/mime.types"
+ 
+ #define HEADERFILE "none"
+ /* an extra file (with HTML markup if desired) placed between the page title
+@@ -126,7 +126,7 @@
+ #define LOGO (ON)
+ /* whether to include a logo. Overridden by +l/-l */
+ 
+-#define CONFIGFILE "/usr/local/etc/prostat.conf"
++#define CONFIGFILE "/etc/prostat.conf"
+ /* the name of the configuration file; see README.html for a description
+    of this file. Use "none" for no configuration file. */
+ /* Overridden by +g/-g */
