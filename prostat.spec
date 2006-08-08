@@ -22,7 +22,7 @@ Prostat jest narzêdziem do statystyk squida.
 
 %prep
 %setup -q -n %{name}_%{version}
-%patch -p1
+%patch0 -p1
 
 %build
 %{__make} \
