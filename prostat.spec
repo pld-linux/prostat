@@ -1,6 +1,6 @@
 %define		_ver	1_32
 Summary:	Squid statistic tool
-Summary(pl):	Narzêdzie do statystyki squida
+Summary(pl.UTF-8):   NarzÄ™dzie do statystyki squida
 Name:		prostat
 Version:	1.32
 Release:	1
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Prostat is a squid statistic tool.
 
-%description -l pl
-Prostat jest narzêdziem do statystyk squida.
+%description -l pl.UTF-8
+Prostat jest narzÄ™dziem do statystyk squida.
 
 %prep
 %setup -q -n %{name}_%{version}
