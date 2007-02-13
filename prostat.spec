@@ -1,6 +1,6 @@
 %define		_ver	1_32
 Summary:	Squid statistic tool
-Summary(pl.UTF-8):   Narzędzie do statystyki squida
+Summary(pl.UTF-8):	Narzędzie do statystyki squida
 Name:		prostat
 Version:	1.32
 Release:	1
